@@ -27,9 +27,8 @@ state_pop_dictionary = {"alabama": 4888949, "alaska": 738068, "arizona": 7123898
 url = "http://corporate.walmart.com/our-story/locations/united-states/"
 
 f = open("dataset.csv", "w")
-f.writelines("State,Population,Walmart Retail Units")
+f.writelines("State,Walmart Retail Units Per 100000\n")
 for state, population in state_pop_dictionary.iteritems():
-    print ("Working on " + state)
     url_friendly_state = state.replace(' ', '-')
     temp_url = url + url_friendly_state
     raw_html = requests.get(temp_url, verify=False).text
@@ -37,5 +36,7 @@ for state, population in state_pop_dictionary.iteritems():
     for p in html.find_all("ul", class_="map-content-stats-list"):
         q = p.find("li", class_="map-content-stats-item")
         r = q.find("span", class_="value")
-        f.write(state + "," + `population` + "," + r.text.strip() + "\n")
+        msg = state + "," + `float(r.text.strip())/population*100000` + "\n"
+        print (msg)
+        f.write(msg)
 

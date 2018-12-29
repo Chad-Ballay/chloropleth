@@ -33,6 +33,6 @@ Get a dataset that is a listing of all 50 states and some numerical value.  For 
 
 
 ## Conclusion
-You now have a rough idea of which states have the most Walmart stores per capita.  Not suprising is that Walmart's home state of Arkansas has the densest ratio.  New Hampshire vs Vermont is another one that suprised me.  
+You now have a rough idea of which states have the most Walmart stores per capita.  Not suprising is that Walmart's home state of Arkansas has the densest ratio.  New Hampshire vs Vermont was one that suprised me.  
 
 You should be able to recreate this type of work for any other set of similarly formatted data.

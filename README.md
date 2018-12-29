@@ -10,3 +10,7 @@ Choropleth maps provide an easy way to visualize how a measurement varies across
 
 ## Examples
 1.  [Chloropleth of Population/Walmart by state using Google Sheets.](./googlesheet/README.md)
+1.  Generating using just Python Libraries for county data.
+1.  Javascript rendering using Google Map api's?
+1.  Tableau
+1.  Interactive?

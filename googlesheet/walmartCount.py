@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import urllib3
 
-
+#Just suppressing important error messages....
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
@@ -28,11 +28,17 @@ url = "http://corporate.walmart.com/our-story/locations/united-states/"
 
 f = open("dataset.csv", "w")
 f.writelines("State,Walmart Retail Units Per 100000\n")
+
+
+# Trivial example so not worrying about doing this asynchronously.  What's a few minutes wasted?
+
 for state, population in state_pop_dictionary.iteritems():
     url_friendly_state = state.replace(' ', '-')
     temp_url = url + url_friendly_state
     raw_html = requests.get(temp_url, verify=False).text
     html = BeautifulSoup(raw_html, 'html.parser')
+
+# Fragile parsing is the best parsing.
     for p in html.find_all("ul", class_="map-content-stats-list"):
         q = p.find("li", class_="map-content-stats-item")
         r = q.find("span", class_="value")

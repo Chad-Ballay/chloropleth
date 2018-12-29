@@ -14,3 +14,4 @@ Choropleth maps provide an easy way to visualize how a measurement varies across
 1.  Javascript rendering using Google Map api's?
 1.  Tableau
 1.  Interactive?
+1.  Excel?

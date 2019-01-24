@@ -1,4 +1,4 @@
-# Chloropleth
+# Choropleth
 A choropleth map (from Greek χῶρος ("area/region") + πλῆθος ("multitude")) is a thematic map in which areas are shaded or patterned in proportion to the measurement of the statistical variable being displayed on the map, such as population density or per-capita income.
 
 Choropleth maps provide an easy way to visualize how a measurement varies across a geographic area or show the level of variability within a region. A heat map is similar but does not use geographic boundaries.
@@ -9,7 +9,7 @@ Choropleth maps provide an easy way to visualize how a measurement varies across
 * Google account for using Sheets.  [https://docs.google.com/](docs.google.com)
 
 ## Examples
-1.  [Chloropleth of Population/Walmart by state using Google Sheets.](./googlesheet/README.md)
+1.  [Choropleth of Population/Walmart by state using Google Sheets.](./googlesheet/README.md)
 1.  Generating using just Python Libraries for county data.
 1.  Javascript rendering using Google Map api's?
 1.  Tableau

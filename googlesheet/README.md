@@ -1,4 +1,4 @@
-# Generating a US Chloropleth using Google Sheets
+# Generating a US Choropleth using Google Sheets
 ## Setup
 Get a dataset that is a listing of all 50 states and some numerical value.  For this example I'm relying on quick pull of state population and Walmart retail sites to calculation the number people per store.  
 
@@ -23,7 +23,7 @@ Get a dataset that is a listing of all 50 states and some numerical value.  For 
 
     <img src="./sheet_data.gif" width="42%">
 
-1. Insert a chart and select the correct chloropleth geographic map.  Google is doing the hardwork so as long as your data set is correctly formatted it will generate for you.    
+1. Insert a chart and select the correct choropleth geographic map.  Google is doing the hardwork so as long as your data set is correctly formatted it will generate for you.    
 
     <img src="./insert_chart.gif" width="42%">
 
